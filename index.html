@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voice Controlled Photo Album</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/components/hmac.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/components/enc-base64.js"></script>
+    <script type="text/javascript" src="lib/url-template/url-template.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/sigV4Client.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
+    <script type="text/javascript" src="apigClient.js"></script>
+    <script>var sdk = apigClientFactory.newClient({});</script>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <header class="main-header">
+                <h1>Voice-Controlled Photo Album</h1>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="./index.html">Search</a></li>
+                        <li><a href="upload.html">Upload</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+        <section>
+            <form action="#" id="tag_form">
+                <input type="text" id="tags" name="tags" required/> <br />
+                <input type="submit" class="main-submit" value="Search your Album" />
+            </form>
+            <div class="orspeech">
+                <h3 class="Or">OR</h3>
+                <button id="speech"><img src="./mic.png" alt="MIC"></button>
+            </div>
+            <table class='photo-table' id='ptable'>
+                <tr>
+                    <td><img src="./d1.jpeg" alt="Error"></td>
+                    <td><img src="./d2.jpeg" alt="Error"></td>
+                </tr>
+                <tr>
+                    <td><img src="./d3.jpg" alt="Error"></td>
+                    <td><img src="./d4.jpeg" alt="Error"></td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <footer class="main-footer">
+                COMS E6998 Cloud Computing and Big Data - Assignment 2<br />
+                &copy; 2021 Amogh Inamdar
+            </footer>
+        </section>
+    </div>
+    <script src="./album.js"></script>
+</body>
+</html>

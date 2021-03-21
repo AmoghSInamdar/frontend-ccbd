@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Voice Controlled Photo Album</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/components/hmac.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/components/enc-base64.js"></script>
+    <script type="text/javascript" src="lib/url-template/url-template.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/sigV4Client.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
+    <script type="text/javascript" src="apigClient.js"></script>
+    <script>var sdk = apigClientFactory.newClient({});</script>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <header class="main-header">
+                <h1>Voice-Controlled Photo Album</h1>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="./index.html">Search</a></li>
+                        <li><a href="upload.html">Upload</a></li>
+                    </ul>
+                </nav>           
+            </header>
+        </section>
+        <section>
+            <form action="#" id="photo_form">
+                <input type="file" id="photo" name="photo" accept=".jpeg, .jpg, .png" required /> <br />
+                <h3>Custom Tags</h3> <input type="text" name="tags" id="tags"> <br />
+                <input type="submit" class="main-submit" value="Upload Images" />
+            </form>
+        </section>
+        <section>
+            <footer class="main-footer">
+                COMS E6998 Cloud Computing and Big Data - Assignment 2<br />
+                &copy; 2021 Amogh Inamdar
+            </footer>
+        </section>
+    </div>
+    <script src="./newphoto.js"></script>
+</body>
+</html>

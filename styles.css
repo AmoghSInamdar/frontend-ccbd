@@ -1,0 +1,145 @@
+.main-header {
+    margin: 1em none;
+}
+
+.main-header h1 {
+    font-size: 4em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.navbar {
+    align-self: center;
+    display: table;
+    margin: 2em auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin: 0 5em;
+}
+
+.navbar a:hover {
+    background-color: darkgray;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+form {
+    width: 80%;
+    margin: auto;
+    padding-top: 2.5em;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+form h2 {
+    font-size: 2.5em;
+}
+
+form#tag_form input[type="text"] {
+    width: 50%;
+    height: 30px;
+    font-size: 20px;
+    border-width: 2px;
+}
+
+form#photo_form h3 {
+    display: inline;
+    margin-right: 10px;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+form#photo_form input[type="text"] {
+    width: 30%;
+    height: 30px;
+    font-size: 20px;
+}
+
+form input[type="file"] {
+    font-size: 25px;
+    margin-left: 15%;
+    margin-bottom: 1em;
+}
+
+.main-submit {
+    font-size: 25px;
+    margin: 40px 15px 0 15px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: lightgray;
+    border: none;
+}
+
+.main-submit:hover {
+    background-color: darkgray;
+}
+
+.orspeech {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3em;
+    text-align: center;
+}
+
+.orspeech h3 {
+    font-size: 1.5em;
+}
+
+#speech {
+    background-color: lightgray;
+    border-radius: 5em;
+    padding: 1em;
+}
+
+#speech img {
+    width: 5em;
+}
+
+#speech:hover {
+    background-color: darkgray;
+}
+
+.photo-table {
+    width: 80%;
+    margin: 1em auto;
+    text-align: center;
+}
+
+.photo-table tr td {
+    padding: 5%;
+    width: 45%
+}
+
+.photo-table tr td img{
+    width: 100%;
+}
+
+.main-footer {
+    background-color: gray;
+    font-size: 1em;
+    padding: 2em;
+    text-align: center;
+}
